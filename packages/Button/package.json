@@ -25,5 +25,9 @@
         "setupFiles": [
             "../../setupTests"
         ]
+    },
+    "gitHead": "ab33074c89bbb9f49753e7d62f884bcbfdef06f2",
+    "publishConfig": {
+        "access": "public"
     }
 }
