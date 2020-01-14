@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import Button from './Button';
+import Button from '../src/Button';
 
 describe('Button Component', function () {
     it('renders without props', function () {
