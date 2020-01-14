@@ -1,5 +1,5 @@
 const buttonStyles = props => `
-         color:red;
+         color:yellow;
        `;
 export default buttonStyles;
 
