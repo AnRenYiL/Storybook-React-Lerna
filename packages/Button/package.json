@@ -1,5 +1,5 @@
 {
-    "name": "@koala/button",
+    "name": "@koala/buttons",
     "version": "1.0.0",
     "description": "A simple button component",
     "main": "dist/index.js",
@@ -26,7 +26,7 @@
             "../../setupTests"
         ]
     },
-    "gitHead": "9f30f85731506722ad82ca92eb08d3b5225906cc",
+    "gitHead": "02f9931129e5cbe8cb82281ff0642898edb0b990",
     "publishConfig": {
         "access": "public"
     }
