@@ -1,6 +1,7 @@
 {
   "name": "koala",
   "private": true,
+  "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.8.3",
     "@babel/core": "^7.8.3",
@@ -23,6 +24,7 @@
     "react-test-renderer": "^16.12.0"
   },
   "dependencies": {
+    "@babel/runtime-corejs2": "^7.8.3",
     "@storybook/addon-knobs": "^5.3.3",
     "styled-components": "^5.0.0"
   },
