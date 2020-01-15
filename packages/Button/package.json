@@ -1,6 +1,6 @@
 {
     "name": "@koala/buttons",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "A simple button component",
     "main": "dist/index.js",
     "module": "src/index.js",
