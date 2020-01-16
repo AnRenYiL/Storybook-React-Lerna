@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from "prop-types";
-import buttonStyles from "./Button.styles";
-import styled from 'styled-components/macro'
+// import buttonStyles from "./Button.styles";
+// import styled from 'styled-components/macro'
 
 const Kinds = {
     DEFAULT: "default",
@@ -78,7 +78,7 @@ const Button = React.forwardRef((props, ref) => {
     };
     buttonProps.type = isSubmit ? "submit" : "button";
     return (
-        <button css={buttonStyles} {...buttonProps} >
+        <button style={{ color: "red" }} {...buttonProps} >
             {children}
         </button>
     );
