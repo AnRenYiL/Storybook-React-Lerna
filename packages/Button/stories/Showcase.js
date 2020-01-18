@@ -29,8 +29,8 @@ function clickHandler() {
 
 const buttonProps = () => ({
     children: text("label", "Default Button"),
-    size: [select("size", Object.keys(ButtonSizes), null)],
-    kind: [select("kind", Object.keys(Types), null)],
+    size: select("size", ButtonSizes, "small"),
+    kind: select("kind", Types, "default"),
     onClick: clickHandler,
     isActive: boolean("isActive", false),
     isDisabled: boolean("isDisabled", false),

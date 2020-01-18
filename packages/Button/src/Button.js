@@ -1,7 +1,13 @@
 import React from 'react';
 import PropTypes from "prop-types";
-// import buttonStyles from "./Button.styles";
-// import styled from 'styled-components/macro'
+import ButtonWithStyle from "./Button.styles";
+const ButtonSizes = {
+    XSMALL: "xsmall",
+    SMALL: "small",
+    MEDIUM: "medium",
+    LARGE: "large",
+    XLARGE: "xlarge"
+};
 
 const Kinds = {
     DEFAULT: "default",
@@ -13,23 +19,15 @@ const Kinds = {
     LINK: "link",
 };
 
-const ButtonSizes = {
-    XSMALL: "xsmall",
-    SMALL: "small",
-    MEDIUM: "medium",
-    LARGE: "large",
-    XLARGE: "xlarge"
-};
-
 const propTypes = {
     canPropagate: PropTypes.bool,
     children: PropTypes.node,
     isDisabled: PropTypes.bool,
     isSubmit: PropTypes.bool,
-    kind: PropTypes.oneOf(Kinds.All),
+    kind: PropTypes.oneOf(Object.values(Kinds)),
     onClick: PropTypes.func,
     role: PropTypes.string,
-    size: PropTypes.oneOf(ButtonSizes.All)
+    size: PropTypes.oneOf(Object.values(ButtonSizes))
 };
 
 const defaultProps = {
@@ -56,7 +54,6 @@ const Button = React.forwardRef((props, ref) => {
     } = props;
 
     const buttonRef = React.useRef(null);
-
     React.useImperativeHandle(ref, () => ({
         focus: () => {
             buttonRef.current.focus();
@@ -67,7 +64,6 @@ const Button = React.forwardRef((props, ref) => {
         if (!canPropagate) event.stopPropagation();
         if (!isDisabled) onClick(event);
     };
-
     const buttonProps = {
         isDisabled,
         kind,
@@ -78,9 +74,12 @@ const Button = React.forwardRef((props, ref) => {
     };
     buttonProps.type = isSubmit ? "submit" : "button";
     return (
-        <button style={{ color: "red" }} {...buttonProps} >
+        // <button {...buttonProps} >
+        //     {children}
+        // </button>
+        <ButtonWithStyle {...buttonProps} >
             {children}
-        </button>
+        </ButtonWithStyle>
     );
 });
 
