@@ -15,7 +15,7 @@ const disabledStyles = `
   }
 `;
 const ButtonWithStyle = style.button`
-  border-radius: 4px;
+  border-radius:  ${tokens.button.borderRadius};
   border-style: solid;
   border-width: 1px;
   box-sizing: border-box;
