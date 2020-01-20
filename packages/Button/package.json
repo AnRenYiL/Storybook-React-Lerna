@@ -34,7 +34,7 @@
         "access": "public"
     },
     "dependencies": {
-        "@anrenyil/tokens": "^0.0.2",
+        "@anrenyil/tokens": "0.0.2",
         "@babel/runtime-corejs2": "^7.8.3"
     },
     "peerDependencies": {

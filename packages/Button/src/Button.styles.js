@@ -15,7 +15,7 @@ const disabledStyles = `
   }
 `;
 const ButtonWithStyle = style.button`
-  font-family: 'Montserrat', sans-serif;
+  font-family: ${tokens.fontFamily.default};
   border-radius: 4px;
   border-style: solid;
   border-width: 1px;
