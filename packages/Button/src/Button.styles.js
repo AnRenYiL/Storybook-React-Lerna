@@ -15,13 +15,13 @@ const disabledStyles = `
   }
 `;
 const ButtonWithStyle = style.button`
-  font-family: ${tokens.fontFamily.default};
   border-radius: 4px;
   border-style: solid;
   border-width: 1px;
   box-sizing: border-box;
   cursor: pointer;
   display: inline-flex;
+  font-family: ${tokens.fontFamily.default};
   font-weight: bold;
   text-align: center;
   vertical-align: middle;
