@@ -88,7 +88,7 @@ const tokens = {
         "colorTransition": "border-color 0.2s"
     },
     "button": {
-        "borderRadius": "4px"
+        "borderRadius": "6px"
     },
     "backgroundColor": {
         "level0": "#f7f7f7"
