@@ -3,6 +3,7 @@
     "version": "0.0.1",
     "description": "Token object",
     "main": "dist/index.js",
+    "module": "./src/index.js",
     "license": "MIT",
     "scripts": {
         "transpile": "babel src -d dist --ignore '**/*.spec.js,**/*.stories.js'",
