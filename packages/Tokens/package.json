@@ -1,0 +1,44 @@
+{
+    "name": "@anrenyil/tokens",
+    "version": "0.0.0",
+    "description": "Token object",
+    "main": "dist/index.js",
+    "license": "MIT",
+    "scripts": {
+        "transpile": "babel src -d dist --ignore '**/*.spec.js,**/*.stories.js'",
+        "jest": "jest --coverage --verbose --color"
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react"
+        ],
+        "env": {
+            "test": {
+                "plugins": [
+                    "transform-es2015-modules-commonjs"
+                ]
+            }
+        },
+        "plugins": [
+            "@babel/plugin-syntax-dynamic-import"
+        ]
+    },
+    "jest": {
+        "setupFiles": [
+            "../../setupTests"
+        ]
+    },
+    "gitHead": "fe25579cd84d6a827203153f1d9b44ad1600f00a",
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "@babel/runtime-corejs2": "^7.8.3"
+    },
+    "peerDependencies": {
+        "react": "^16.8.4",
+        "react-dom": "^16.8.4",
+        "styled-components": "^5.0.0"
+    }
+}

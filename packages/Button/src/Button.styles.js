@@ -14,6 +14,7 @@ const disabledStyles = `
   }
 `;
 const ButtonWithStyle = style.button`
+  font-family: 'Montserrat', sans-serif;
   border-radius: 4px;
   border-style: solid;
   border-width: 1px;
@@ -24,8 +25,8 @@ const ButtonWithStyle = style.button`
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
-  ${props => (props.isDisabled ? disabledStyles : "")}
   ${props => (getColor(props))}
+  ${props => (props.isDisabled ? disabledStyles : "")}
 `
 function getColor(props) {
   if (props.kind == "primary")
