@@ -1,6 +1,6 @@
 {
     "name": "@anrenyil/common-buttons",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "A simple button component",
     "main": "dist/index.js",
     "license": "MIT",
